@@ -56,9 +56,6 @@ build: $(OUTPUT_DIR)/$(LIBRARY).a
 .PHONY: remake
 remake: clean build
 
-comp_test : $(_LIBRARY_OBJ) $(_PLATFORM_OBJ)
-
-
 
 # archive
 $(OUTPUT_DIR)/$(LIBRARY).a : $(_LIBRARY_OBJ) $(_PLATFORM_OBJ) makefile
